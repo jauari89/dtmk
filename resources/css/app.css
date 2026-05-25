@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer base {
+    html {
+        scroll-padding-top: 7rem;
+    }
+
+    body {
+        text-rendering: optimizeLegibility;
+    }
+
+    ::selection {
+        background: rgba(34, 211, 238, 0.35);
+        color: #ffffff;
+    }
+}
+
+@layer components {
+    .cyber-grid {
+        background-image:
+            linear-gradient(rgba(34, 211, 238, 0.14) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(34, 211, 238, 0.12) 1px, transparent 1px),
+            linear-gradient(135deg, rgba(168, 85, 247, 0.2), transparent 46%, rgba(34, 211, 238, 0.12));
+        background-size: 44px 44px, 44px 44px, 100% 100%;
+        mask-image: linear-gradient(to bottom, black 20%, transparent 95%);
+    }
+
+    .media-console::before {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        content: "";
+        background:
+            linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent),
+            repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 8px);
+        opacity: 0.4;
+    }
+}
+
+@layer utilities {
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+}
