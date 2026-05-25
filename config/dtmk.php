@@ -74,7 +74,7 @@ return [
             'meta' => 'MMB',
         ],
         [
-            'title' => 'Sarjana Terapan Teknologi Game',
+            'title' => 'D4 Teknologi Game',
             'description' => 'Pembelajaran game design, game programming, visual asset, simulasi, dan produksi game berbasis industri.',
             'icon' => 'gamepad',
             'url' => 'https://gametech.pens.ac.id',
@@ -82,7 +82,7 @@ return [
             'meta' => 'Game Technology',
         ],
         [
-            'title' => 'Sarjana Terapan Teknologi Rekayasa Multimedia',
+            'title' => 'D4 Teknologi Rekayasa Multimedia',
             'description' => 'Fokus pada rekayasa sistem multimedia, AR/VR/XR, media interaktif, UI/UX, dan integrasi teknologi kreatif.',
             'icon' => 'cube',
             'url' => 'https://trm.pens.ac.id',
@@ -90,7 +90,7 @@ return [
             'meta' => 'TRM',
         ],
         [
-            'title' => 'Bisnis Digital',
+            'title' => 'D4 Bisnis Digital',
             'description' => 'Mengembangkan talenta produk digital, strategi bisnis, pemasaran kreatif, analitik, dan kewirausahaan teknologi.',
             'icon' => 'briefcase',
             'url' => 'https://digibiz.pens.ac.id',
